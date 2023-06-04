@@ -165,17 +165,17 @@
     <!-- Contact -->
     <section class="form" id="contact">
     <h1>Contact Us</h1><br>
-    <form action="https://formsubmit.co/3207fc24417dadfb995f04e0c6b87c7d" class="row g-3 needs-validation" method="post" novalidate>
+    <form action="https://formsubmit.co/3207fc24417dadfb995f04e0c6b87c7d" class="row g-3 needs-validation" method="POST" novalidate>
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <input type="text" class="form-control" id="validationCustom01" name="FirstName" value="Mark" required>
         <div class="valid-feedback">
           Looks good!
         </div>
       </div>
       <div class="col-md-4">
         <label for="validationCustom02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <input type="text" class="form-control" id="validationCustom02" name="LastName" value="Otto" required>
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -184,7 +184,7 @@
         <label for="validationCustomUsername" class="form-label">Username</label>
         <div class="input-group has-validation">
           <span class="input-group-text" id="inputGroupPrepend">@</span>
-          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <input type="text" class="form-control" id="validationCustomUsername" name="username" aria-describedby="inputGroupPrepend" required>
           <div class="invalid-feedback">
             Please choose a username.
           </div>
@@ -199,7 +199,7 @@
       </div>
       <div class="col-md-3">
         <label for="validationCustom04" class="form-label">State</label>
-        <select class="form-select" id="validationCustom04" required>
+        <select class="form-select" id="validationCustom04" name="province" required>
           <option selected disabled value="">Choose...</option>
           <option>Province 1</option>
           <option>Province 2</option>
@@ -215,7 +215,7 @@
       </div>
       <div class="col-md-3">
         <label for="validationCustom05" class="form-label">Concern</label>
-        <input type="text" class="form-control" id="validationCustom05" required placeholder="Please mention your concern">
+        <input type="text" class="form-control" id="validationCustom05" name="concern" required placeholder="Please mention your concern">
         <div class="invalid-feedback">
           Please provide a valid zip.
         </div>
